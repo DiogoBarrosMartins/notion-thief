@@ -1,0 +1,624 @@
+[
+  {
+    "id": "55173b7f-d531-4acc-ad3d-f43ecebee8e8",
+    "result": "Unknown",
+    "time": "2025-09-16 00:57:11",
+    "format": null,
+    "player_deck": null,
+    "player_decklist": {
+      "main": [],
+      "side": []
+    },
+    "opponent": "Cragg",
+    "opponent_deck": null,
+    "plays": [
+      {
+        "t": "2025-09-16 00:57:02",
+        "who": "You",
+        "card": "Forest",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 00:57:07",
+        "who": "You",
+        "card": "Unknown(96074)",
+        "zone": "stack"
+      }
+    ]
+  },
+  {
+    "id": "3b5af277-0edc-4e3b-a850-ddb392a4c732",
+    "result": "Unknown",
+    "time": "2025-09-16 00:59:04",
+    "format": "Standard",
+    "player_deck": "Mono-Green",
+    "player_decklist": {
+      "main": [
+        [
+          2,
+          "Archdruid's Charm"
+        ],
+        [
+          4,
+          "Bristly Bill, Spine Sower"
+        ],
+        [
+          4,
+          "Escape Tunnel"
+        ],
+        [
+          4,
+          "Fabled Passage"
+        ],
+        [
+          16,
+          "Forest"
+        ],
+        [
+          4,
+          "Llanowar Elves"
+        ],
+        [
+          4,
+          "Mossborn Hydra"
+        ],
+        [
+          4,
+          "Ordeal of Nylea"
+        ],
+        [
+          4,
+          "Snakeskin Veil"
+        ],
+        [
+          4,
+          "Titanic Growth"
+        ],
+        [
+          2,
+          "Unknown(96064)"
+        ],
+        [
+          4,
+          "Unknown(96067)"
+        ],
+        [
+          4,
+          "Unknown(96074)"
+        ]
+      ],
+      "side": []
+    },
+    "opponent": "John",
+    "opponent_deck": null,
+    "plays": [
+      {
+        "t": "2025-09-16 00:58:58",
+        "who": "You",
+        "card": "Forest",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 00:59:01",
+        "who": "You",
+        "card": "Unknown(96067)",
+        "zone": "stack"
+      }
+    ]
+  },
+  {
+    "id": "c5283ba0-8383-4e44-b760-42e9ee298c5c",
+    "result": "Unknown",
+    "time": "2025-09-16 01:00:36",
+    "format": "Standard",
+    "player_deck": "Mono-Green",
+    "player_decklist": {
+      "main": [
+        [
+          2,
+          "Archdruid's Charm"
+        ],
+        [
+          4,
+          "Bristly Bill, Spine Sower"
+        ],
+        [
+          4,
+          "Escape Tunnel"
+        ],
+        [
+          4,
+          "Fabled Passage"
+        ],
+        [
+          16,
+          "Forest"
+        ],
+        [
+          4,
+          "Llanowar Elves"
+        ],
+        [
+          4,
+          "Mossborn Hydra"
+        ],
+        [
+          4,
+          "Ordeal of Nylea"
+        ],
+        [
+          4,
+          "Snakeskin Veil"
+        ],
+        [
+          4,
+          "Titanic Growth"
+        ],
+        [
+          2,
+          "Unknown(96064)"
+        ],
+        [
+          4,
+          "Unknown(96067)"
+        ],
+        [
+          4,
+          "Unknown(96074)"
+        ]
+      ],
+      "side": []
+    },
+    "opponent": "Beava7",
+    "opponent_deck": null,
+    "plays": [
+      {
+        "t": "2025-09-16 01:00:27",
+        "who": "Opponent",
+        "card": "Scoured Barrens",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:00:27",
+        "who": "You",
+        "card": "Bristly Bill, Spine Sower",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:00:27",
+        "who": "You",
+        "card": "Bristly Bill, Spine Sower",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:00:33",
+        "who": "You",
+        "card": "Forest",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:00:33",
+        "who": "You",
+        "card": "Unknown(96067)",
+        "zone": "stack"
+      }
+    ]
+  },
+  {
+    "id": "b1489bb7-ca96-4c72-8490-71e9323d14a7",
+    "result": "Unknown",
+    "time": "2025-09-16 01:02:34",
+    "format": "Standard",
+    "player_deck": "Mono-Green",
+    "player_decklist": {
+      "main": [
+        [
+          2,
+          "Archdruid's Charm"
+        ],
+        [
+          4,
+          "Bristly Bill, Spine Sower"
+        ],
+        [
+          4,
+          "Escape Tunnel"
+        ],
+        [
+          4,
+          "Fabled Passage"
+        ],
+        [
+          16,
+          "Forest"
+        ],
+        [
+          4,
+          "Llanowar Elves"
+        ],
+        [
+          4,
+          "Mossborn Hydra"
+        ],
+        [
+          4,
+          "Ordeal of Nylea"
+        ],
+        [
+          4,
+          "Snakeskin Veil"
+        ],
+        [
+          4,
+          "Titanic Growth"
+        ],
+        [
+          2,
+          "Unknown(96064)"
+        ],
+        [
+          4,
+          "Unknown(96067)"
+        ],
+        [
+          4,
+          "Unknown(96074)"
+        ]
+      ],
+      "side": []
+    },
+    "opponent": "Valhallaexe",
+    "opponent_deck": null,
+    "plays": [
+      {
+        "t": "2025-09-16 01:02:18",
+        "who": "You",
+        "card": "Escape Tunnel",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:02:25",
+        "who": "Opponent",
+        "card": "Frontier Bivouac",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:02:29",
+        "who": "You",
+        "card": "Unknown(96074)",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:02:29",
+        "who": "You",
+        "card": "Unknown(96074)",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:02:32",
+        "who": "You",
+        "card": "Fabled Passage",
+        "zone": "battlefield"
+      }
+    ]
+  },
+  {
+    "id": "fa804118-b702-477b-af77-fb0254a896ac",
+    "result": "Unknown",
+    "time": "2025-09-16 01:08:05",
+    "format": "Standard",
+    "player_deck": "Mono-Green",
+    "player_decklist": {
+      "main": [
+        [
+          2,
+          "Archdruid's Charm"
+        ],
+        [
+          4,
+          "Bristly Bill, Spine Sower"
+        ],
+        [
+          4,
+          "Escape Tunnel"
+        ],
+        [
+          4,
+          "Fabled Passage"
+        ],
+        [
+          16,
+          "Forest"
+        ],
+        [
+          4,
+          "Llanowar Elves"
+        ],
+        [
+          4,
+          "Mossborn Hydra"
+        ],
+        [
+          4,
+          "Ordeal of Nylea"
+        ],
+        [
+          4,
+          "Snakeskin Veil"
+        ],
+        [
+          4,
+          "Titanic Growth"
+        ],
+        [
+          2,
+          "Unknown(96064)"
+        ],
+        [
+          4,
+          "Unknown(96067)"
+        ],
+        [
+          4,
+          "Unknown(96074)"
+        ]
+      ],
+      "side": []
+    },
+    "opponent": "Esparguetes",
+    "opponent_deck": null,
+    "plays": [
+      {
+        "t": "2025-09-16 01:07:30",
+        "who": "You",
+        "card": "Unknown(96841)",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:07:30",
+        "who": "Opponent",
+        "card": "Archdruid's Charm",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:07:30",
+        "who": "Opponent",
+        "card": "Archdruid's Charm",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:07:49",
+        "who": "Opponent",
+        "card": "Forest",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:07:53",
+        "who": "You",
+        "card": "Unknown(96843)",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:07:55",
+        "who": "You",
+        "card": "Gev, Scaled Scorch",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:07:55",
+        "who": "Opponent",
+        "card": "Mossborn Hydra",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:07:55",
+        "who": "Opponent",
+        "card": "Mossborn Hydra",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:08:03",
+        "who": "Opponent",
+        "card": "Escape Tunnel",
+        "zone": "battlefield"
+      }
+    ]
+  },
+  {
+    "id": "29438fb9-5e56-4deb-87fb-26b6ede975a3",
+    "result": "Unknown",
+    "time": "2025-09-16 01:09:42",
+    "format": null,
+    "player_deck": null,
+    "player_decklist": {
+      "main": [],
+      "side": []
+    },
+    "opponent": "Zorbo Stonk",
+    "opponent_deck": null,
+    "plays": [
+      {
+        "t": "2025-09-16 01:09:34",
+        "who": "Opponent",
+        "card": "Unknown(96181)",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:09:36",
+        "who": "You",
+        "card": "Escape Tunnel",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:09:36",
+        "who": "You",
+        "card": "Escape Tunnel",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:09:38",
+        "who": "You",
+        "card": "Forest",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:09:39",
+        "who": "You",
+        "card": "Llanowar Elves",
+        "zone": "stack"
+      }
+    ]
+  },
+  {
+    "id": "a101607f-4679-4373-8b2b-b422bda9d4c9",
+    "result": "Unknown",
+    "time": "2025-09-16 01:17:35",
+    "format": "Standard",
+    "player_deck": "Mono-Green",
+    "player_decklist": {
+      "main": [
+        [
+          2,
+          "Archdruid's Charm"
+        ],
+        [
+          4,
+          "Bristly Bill, Spine Sower"
+        ],
+        [
+          4,
+          "Escape Tunnel"
+        ],
+        [
+          4,
+          "Fabled Passage"
+        ],
+        [
+          16,
+          "Forest"
+        ],
+        [
+          4,
+          "Llanowar Elves"
+        ],
+        [
+          4,
+          "Mossborn Hydra"
+        ],
+        [
+          4,
+          "Ordeal of Nylea"
+        ],
+        [
+          4,
+          "Snakeskin Veil"
+        ],
+        [
+          4,
+          "Titanic Growth"
+        ],
+        [
+          2,
+          "Unknown(96064)"
+        ],
+        [
+          4,
+          "Unknown(96067)"
+        ],
+        [
+          4,
+          "Unknown(96074)"
+        ]
+      ],
+      "side": []
+    },
+    "opponent": "punkprincess1977",
+    "opponent_deck": null,
+    "plays": [
+      {
+        "t": "2025-09-16 01:16:09",
+        "who": "You",
+        "card": "Forest",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:16:09",
+        "who": "You",
+        "card": "Llanowar Elves",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:16:17",
+        "who": "Opponent",
+        "card": "Unknown(96845)",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:16:24",
+        "who": "Opponent",
+        "card": "Dragon Sniper",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:16:24",
+        "who": "You",
+        "card": "Unknown(96074)",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:16:24",
+        "who": "You",
+        "card": "Unknown(96074)",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:16:35",
+        "who": "You",
+        "card": "Forest",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:16:36",
+        "who": "You",
+        "card": "Titanic Growth",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:16:54",
+        "who": "Opponent",
+        "card": "Unknown(96837)",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:16:57",
+        "who": "Opponent",
+        "card": "Cenote Scout",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:16:57",
+        "who": "You",
+        "card": "Escape Tunnel",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:16:57",
+        "who": "You",
+        "card": "Escape Tunnel",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:17:06",
+        "who": "You",
+        "card": "Escape Tunnel",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:17:10",
+        "who": "You",
+        "card": "Unknown(96074)",
+        "zone": "stack"
+      }
+    ]
+  }
+]
