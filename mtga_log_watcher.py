@@ -25,6 +25,8 @@ ANNOUNCE_PLAYS = os.getenv("ANNOUNCE_PLAYS", "1") == "1"
 # State
 # =======================
 card_map = load_card_map()
+opponent_cards = set()   # <— NOVO
+
 
 current_match = {
     "id": None,
@@ -264,6 +266,9 @@ def _announce_play(instance_id, grp_id, seat, zone_name):
 
     card_name = get_card_name(grp_id, card_map, quiet=True)
     who = _seat_label(seat)
+    if who == "Opponent":   # <— NOVO
+        opponent_cards.add(card_name)
+
 
     sig = (int(grp_id), who, zone_name, len(current_match["plays"]))
     if sig in _seen_plays:
@@ -331,6 +336,9 @@ def _handle_annotations(annotations):
             seat = rec.get("controllerSeatId") or rec.get("ownerSeatId")
             if grp is None:
                 continue
+            who = _seat_label(seat)
+            if who == "Opponent":   # <— NOVO
+                opponent_cards.add(get_card_name(grp, card_map, quiet=True))
             # draw: library → hand
             if src_name == "library" and dst_name == "hand":
                 who = _seat_label(seat)
@@ -411,8 +419,12 @@ def _emit_decklist(summary: dict, deck: dict):
 # Handlers
 # =======================
 def handle_top(obj: dict):
-    if current_match["finished"]:
-        return
+    if isinstance(obj, dict) and "clientToMatchServiceMessageType" in obj:
+        val = str(obj.get("clientToMatchServiceMessageType") or "")
+        if "concede" in val.lower():  # <— robusto
+            _finish_match("Loss")
+
+  
 
     # 0) state changes
     if "_state" in obj:
@@ -584,8 +596,10 @@ def _handle_result_old(data: dict):
     _finish_match(result)
 
 def _finish_match(result_label: str, match_id: str | None = None):
+    global opponent_cards
     if current_match["finished"]:
         return
+
     current_match["finished"] = True
 
     global last_deck_sig
@@ -601,7 +615,7 @@ def _finish_match(result_label: str, match_id: str | None = None):
         "player_deck": current_match.get("player_deck"),
         "player_decklist": current_match.get("player_decklist"),
         "opponent": current_match.get("opponent"),
-        "opponent_deck": current_match.get("opponent_deck"),
+        "opponent_deck": sorted(list(opponent_cards)), 
         "plays": current_match.get("plays", []),
     }
 
@@ -620,6 +634,7 @@ def _finish_match(result_label: str, match_id: str | None = None):
         "my_team_id": None, "my_seat": None, "opening_emitted": False,
         "finished": False,
     })
+    opponent_cards = set()
     _seen_play_instances.clear()
     _seen_plays.clear()
     instance_index.clear()

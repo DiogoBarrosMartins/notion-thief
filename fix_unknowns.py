@@ -26,6 +26,14 @@ for k in unknown_keys:
 
 print(f"✅ Replaced {changed} Unknown(...) entries using {OVR}")
 
+# tenta resolver os que ficaram Unknown via Scryfall
+left = [int(k) for k, v in m.items() if str(v).startswith("Unknown(")]
+if left:
+    print(f"🌐 Trying Scryfall for {len(left)} remaining Unknown IDs ...")
+    card_mapper.resolve_many(left, m, delay=0.08)
+    still = [k for k in left if str(m.get(str(k), "")).startswith("Unknown(")]
+    print(f"✅ After Scryfall: {len(left) - len(still)} fixed, {len(still)} still Unknown")
+
 # backup e grava
 if os.path.exists(CARD_DB):
     shutil.copyfile(CARD_DB, CARD_DB + ".bak")

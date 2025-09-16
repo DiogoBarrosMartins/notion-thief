@@ -3,36 +3,18 @@ import json, os, time, requests
 from typing import Iterable, Dict, Optional
 
 CARD_DB = "card_map.json"
-OVERRIDES_DB = "card_overrides.json"
 
 _session = requests.Session()
 _session.headers.update({"User-Agent": "mtga-historian/1.0 (+discord-bot)"})
 
 def load_card_map() -> Dict[str, str]:
-    # 1) start from OVERRIDES_DB (MTGJSON) -> authoritative English names
-    m: Dict[str, str] = {}
-    if os.path.exists(OVERRIDES_DB):
-        try:
-            with open(OVERRIDES_DB, "r", encoding="utf-8") as f:
-                m.update({str(k): str(v) for k, v in json.load(f).items()})
-        except Exception:
-            pass
-
-    # 2) layer your local cache on top, BUT ignore stale Unknown(...)
     if os.path.exists(CARD_DB):
         try:
             with open(CARD_DB, "r", encoding="utf-8") as f:
-                local = json.load(f)
-            for k, v in local.items():
-                k = str(k); v = str(v)
-                if v.startswith("Unknown(") and k in m and m[k]:
-                    # keep the good override, skip stale Unknown
-                    continue
-                m[k] = v
+                return {str(k): str(v) for k, v in json.load(f).items()}
         except Exception:
             pass
-
-    return {str(k): str(v) for k, v in m.items()}
+    return {}
 
 def _save_atomic(path: str, data: dict):
     tmp = path + ".tmp"
@@ -44,56 +26,42 @@ def save_card_map(card_map: Dict[str, str]) -> None:
     _save_atomic(CARD_DB, card_map)
 
 def _fetch_from_scryfall(grp_id: int) -> Optional[str]:
-    # 1) endpoint direto
     try:
         r = _session.get(f"https://api.scryfall.com/cards/arena/{grp_id}", timeout=8)
-        if r.status_code == 200:
-            name = r.json().get("name")
-            if name:
-                return name
-        elif r.status_code == 429:
-            time.sleep(0.5)
+        if r.ok:
+            js = r.json()
+            n = js.get("name")
+            if n:
+                return n
     except Exception:
         pass
 
-    # 2) pesquisas alternativas com extras/variations e "pick" pelo arena_id
-    queries = (f"arena:{grp_id}", f"arena_id:{grp_id}")
-    for q in queries:
-        tries = 0
-        while tries < 2:
-            tries += 1
-            try:
-                sr = _session.get(
-                    "https://api.scryfall.com/cards/search",
-                    params={
-                        "q": q,
-                        "unique": "prints",
-                        "order": "released",
-                        "include_extras": "true",
-                        "include_variations": "true",
-                    },
-                    timeout=10,
-                )
-                if sr.status_code == 429:
-                    time.sleep(0.5 * tries)
-                    continue
-                if sr.status_code == 200:
-                    js = sr.json()
-                    data = (js or {}).get("data") or []
-                    if data:
-                        for it in data:
-                            if str(it.get("arena_id")) == str(grp_id):
-                                nm = it.get("name")
-                                if nm:
-                                    return nm
-                        nm = next((d.get("name") for d in data if d.get("name")), None)
-                        if nm:
-                            return nm
-                break
-            except Exception:
-                break
+    url = "https://api.scryfall.com/cards/search"
+    params = {
+        "q": f"arena:{grp_id} OR arena_id:{grp_id}",
+        "unique": "prints",
+        "order": "released",
+        "include_extras": "true",
+        "include_variations": "true",
+        "include_multilingual": "true",
+    }
+    while True:
+        try:
+            s = _session.get(url, params=params, timeout=12)
+        except Exception:
+            break
+        if not s.ok:
+            break
+        js = s.json()
+        for c in js.get("data", []):
+            if str(c.get("arena_id") or "") == str(grp_id):
+                return c.get("name")
+        if js.get("has_more") and js.get("next_page"):
+            url = js["next_page"]
+            params = None
+            continue
+        break
     return None
-
 
 def get_card_name(grp_id, card_map: Dict[str, str], quiet: bool = False) -> str:
     key = str(grp_id)

@@ -620,5 +620,438 @@
         "zone": "stack"
       }
     ]
+  },
+  {
+    "id": "d76c0c7a-6b80-4ff0-a668-108f04eccc8e",
+    "result": "Unknown",
+    "time": "2025-09-16 01:30:28",
+    "format": "Standard",
+    "player_deck": "Mono-Green",
+    "player_decklist": {
+      "main": [
+        [
+          2,
+          "Archdruid's Charm"
+        ],
+        [
+          4,
+          "Bristly Bill, Spine Sower"
+        ],
+        [
+          4,
+          "Escape Tunnel"
+        ],
+        [
+          4,
+          "Fabled Passage"
+        ],
+        [
+          16,
+          "Forest"
+        ],
+        [
+          4,
+          "Llanowar Elves"
+        ],
+        [
+          4,
+          "Mossborn Hydra"
+        ],
+        [
+          4,
+          "Ordeal of Nylea"
+        ],
+        [
+          4,
+          "Snakeskin Veil"
+        ],
+        [
+          4,
+          "Titanic Growth"
+        ],
+        [
+          2,
+          "Unknown(96064)"
+        ],
+        [
+          4,
+          "Unknown(96067)"
+        ],
+        [
+          4,
+          "Unknown(96074)"
+        ]
+      ],
+      "side": []
+    },
+    "opponent": "dadaiSmo",
+    "opponent_deck": null,
+    "plays": [
+      {
+        "t": "2025-09-16 01:27:52",
+        "who": "You",
+        "card": "Forest",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:27:54",
+        "who": "You",
+        "card": "Llanowar Elves",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:27:59",
+        "who": "Opponent",
+        "card": "Unknown(96841)",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:28:01",
+        "who": "Opponent",
+        "card": "Unknown(96148)",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:28:01",
+        "who": "You",
+        "card": "Archdruid's Charm",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:28:01",
+        "who": "You",
+        "card": "Archdruid's Charm",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:28:07",
+        "who": "You",
+        "card": "Bristly Bill, Spine Sower",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:28:09",
+        "who": "You",
+        "card": "Escape Tunnel",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:28:17",
+        "who": "Opponent",
+        "card": "Unknown(96841)",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:30:24",
+        "who": "You",
+        "card": "Titanic Growth",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:30:24",
+        "who": "You",
+        "card": "Titanic Growth",
+        "zone": "draw"
+      }
+    ]
+  },
+  {
+    "id": "bfb9232d-26c4-4a2c-a261-b6539420d26c",
+    "result": "Unknown",
+    "time": "2025-09-16 01:33:07",
+    "format": "Standard",
+    "player_deck": "Orzhov Sacrifice",
+    "player_decklist": {
+      "main": [
+        [
+          3,
+          "Bleachbone Verge"
+        ],
+        [
+          1,
+          "Concealed Courtyard"
+        ],
+        [
+          2,
+          "Enduring Innocence"
+        ],
+        [
+          1,
+          "Godless Shrine"
+        ],
+        [
+          3,
+          "Infestation Sage"
+        ],
+        [
+          3,
+          "Nezumi Linkbreaker"
+        ],
+        [
+          7,
+          "Plains"
+        ],
+        [
+          3,
+          "Raise the Past"
+        ],
+        [
+          1,
+          "Shadowy Backstreet"
+        ],
+        [
+          4,
+          "Snarling Gorehound"
+        ],
+        [
+          8,
+          "Swamp"
+        ],
+        [
+          4,
+          "Unknown(95975)"
+        ],
+        [
+          4,
+          "Unknown(96695)"
+        ],
+        [
+          4,
+          "Unknown(96697)"
+        ],
+        [
+          3,
+          "Unknown(96805)"
+        ],
+        [
+          1,
+          "Unknown(96828)"
+        ],
+        [
+          4,
+          "Vengeful Bloodwitch"
+        ],
+        [
+          4,
+          "Voice of Victory"
+        ]
+      ],
+      "side": []
+    },
+    "opponent": "Esparguetes",
+    "opponent_deck": null,
+    "plays": [
+      {
+        "t": "2025-09-16 01:32:18",
+        "who": "Opponent",
+        "card": "Swamp",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:32:19",
+        "who": "Opponent",
+        "card": "Infestation Sage",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:32:24",
+        "who": "You",
+        "card": "Temple of Mystery",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:32:27",
+        "who": "Opponent",
+        "card": "Unknown(96828)",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:32:27",
+        "who": "Opponent",
+        "card": "Unknown(96828)",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:33:04",
+        "who": "Opponent",
+        "card": "Unknown(96828)",
+        "zone": "battlefield"
+      }
+    ]
+  },
+  {
+    "id": "4e39f4c4-1a83-4cc6-9cde-b01b22607ef1",
+    "result": "Unknown",
+    "time": "2025-09-16 01:54:13",
+    "format": "Standard",
+    "player_deck": "Orzhov Sacrifice",
+    "player_decklist": {
+      "main": [
+        [
+          3,
+          "Bleachbone Verge"
+        ],
+        [
+          1,
+          "Concealed Courtyard"
+        ],
+        [
+          2,
+          "Enduring Innocence"
+        ],
+        [
+          1,
+          "Godless Shrine"
+        ],
+        [
+          3,
+          "Infestation Sage"
+        ],
+        [
+          3,
+          "Nezumi Linkbreaker"
+        ],
+        [
+          7,
+          "Plains"
+        ],
+        [
+          3,
+          "Raise the Past"
+        ],
+        [
+          1,
+          "Shadowy Backstreet"
+        ],
+        [
+          4,
+          "Snarling Gorehound"
+        ],
+        [
+          8,
+          "Swamp"
+        ],
+        [
+          4,
+          "Unknown(95975)"
+        ],
+        [
+          4,
+          "Unknown(96695)"
+        ],
+        [
+          4,
+          "Unknown(96697)"
+        ],
+        [
+          3,
+          "Unknown(96805)"
+        ],
+        [
+          1,
+          "Unknown(96828)"
+        ],
+        [
+          4,
+          "Vengeful Bloodwitch"
+        ],
+        [
+          4,
+          "Voice of Victory"
+        ]
+      ],
+      "side": []
+    },
+    "opponent": "HolyTrident",
+    "opponent_deck": [
+      "Unknown(96757)",
+      "Unknown(97172)"
+    ],
+    "plays": [
+      {
+        "t": "2025-09-16 01:53:01",
+        "who": "You",
+        "card": "Swamp",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:53:03",
+        "who": "You",
+        "card": "Infestation Sage",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:53:10",
+        "who": "Opponent",
+        "card": "Unknown(97172)",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:53:13",
+        "who": "You",
+        "card": "Unknown(96695)",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:53:13",
+        "who": "You",
+        "card": "Unknown(96695)",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:53:24",
+        "who": "You",
+        "card": "Plains",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:53:25",
+        "who": "You",
+        "card": "Voice of Victory",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:53:36",
+        "who": "Opponent",
+        "card": "Unknown(97172)",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:53:41",
+        "who": "Opponent",
+        "card": "Unknown(96757)",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:53:55",
+        "who": "You",
+        "card": "Unknown(96828)",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:53:55",
+        "who": "You",
+        "card": "Unknown(96828)",
+        "zone": "draw"
+      },
+      {
+        "t": "2025-09-16 01:54:05",
+        "who": "You",
+        "card": "Unknown(96828)",
+        "zone": "battlefield"
+      },
+      {
+        "t": "2025-09-16 01:54:06",
+        "who": "You",
+        "card": "Nezumi Linkbreaker",
+        "zone": "stack"
+      },
+      {
+        "t": "2025-09-16 01:54:10",
+        "who": "You",
+        "card": "Unknown(96695)",
+        "zone": "stack"
+      }
+    ]
   }
 ]
