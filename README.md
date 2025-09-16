@@ -1,9 +1,10 @@
-# Historian — MTGA Log Watcher
+# Notion Thief — MTGA Log Watcher
 
-Historian is a tool that **watches your MTG Arena `Player.log`** in real-time and reports what happens in your matches to **Discord**.  
+Notion Thief is a tool that **watches your MTG Arena `Player.log`** in real-time and reports what happens in your matches to **Discord**.  
 It is useful for tracking decks, plays, and results automatically.
 
 ---
+<img width="389" height="286" alt="Screenshot 2025-09-16 at 11 18 25" src="https://github.com/user-attachments/assets/4d4fc92f-4b8c-4f7a-b255-c78b2b8b849f" />
 
 ## ✨ Features
 
